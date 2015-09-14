@@ -1,0 +1,48 @@
+// ==========================================================================
+//
+// Images
+//
+//
+
+.image-post-hero {
+	width: 100%;
+	@include maintain-ratio(1.619 1);
+	overflow: hidden;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+}
+
+.image-white {
+	background: #fff;
+}
+
+.image-hero {
+	overflow: hidden;
+	width: 100%;
+	@include maintain-ratio(2 1);
+	background: $colourTypeDark;
+	position: relative;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+}
+
+.image-golden {
+	width: 100%;
+	position: relative;
+	@include maintain-ratio(16 9);
+	background: $colourTypeDark;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+}
+
+.image-poster {
+	height: auto;
+	overflow: auto;
+	overflow: hidden;
+	width: 100%;
+	@include maintain-ratio(1 1.414);
+	background: $colourTypeDark;
+	position: relative;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+}

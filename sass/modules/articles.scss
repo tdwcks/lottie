@@ -1,0 +1,75 @@
+// ==========================================================================
+//
+// Articles
+//
+//
+
+.article-featured {
+  height: auto;
+  overflow: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  h2 {
+    color: #fff;
+
+    span {
+      opacity: 0.8;
+    }
+  }
+
+  h4 {
+    padding-top: 15px;
+    color: $colourOne;
+  }
+
+  p {
+    font-size: 1.3em;
+    color: #fff;
+  }
+}
+
+.article-description {
+  padding: 50px 0 0px 0;
+
+  h2 span {
+    opacity: 0;
+
+    @for $i from 1 through 5 {
+      // Apply animation using :nth-child pseudoclass
+      &:nth-child(#{$i}) {
+        // Include the animation mixin, together with 
+        // a delay parameter.
+        @include animation--fadedown($i/10);
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4em;
+    color: darken($colourType, 10%);
+  }
+}
+
+.article-shows {
+  height: auto;
+  overflow: auto;
+  margin-bottom: $grid-spacing;
+}
+
+.article-sticky {
+  position:fixed;
+  top:0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  @include transition(all, 0.4s, ease-in-out);
+  @include transform(translateY(-100px));
+
+  &.stuck {
+    @include transform(translateY(0px));
+  }
+
+}

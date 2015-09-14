@@ -1,0 +1,29 @@
+// ==========================================================================
+//
+// Footer
+//
+//
+
+footer {
+	clear: both;
+	height: auto;
+	overflow: auto;
+	padding: 30px 0;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+
+	a {
+		font-family: $mainFont;
+		color: $colourTypeDark;
+		text-decoration: none;
+	}
+
+	span {
+		font-family: $mainFont;
+		color: $colourTypeDark;
+		float: right;
+		text-decoration: none;
+	}
+}

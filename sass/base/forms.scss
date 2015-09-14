@@ -1,0 +1,192 @@
+// ==========================================================================
+//
+// Forms
+//
+//
+
+form {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+
+	img {
+		display: none;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+		font-size: 1em;
+		font-family: $headingFont;
+		font-weight: 900;
+		color: $colourTypeDark !important;
+		padding-bottom: 20px;
+	}
+
+	input {
+		margin-top: 20px;
+		width: 100%;
+		padding: 10px 25px 15px 25px;
+		box-sizing: border-box;
+		border: none;
+		font-family: $mainFont;
+		color: darken($colourType, 10%);
+		font-size: 1.15em;
+		outline: none;
+		@include border-radius(0px);
+		border: 3px solid $colourBackground;
+
+		&:focus {
+			border: 3px solid $colourSeven;
+			color: $colourSeven;
+		}
+	}
+
+	input[type=submit] {
+		margin-top: 20px;
+		width: 100%;
+		padding: 10px 25px 15px 25px;
+		box-sizing: border-box;
+		border: none;
+		cursor: pointer;
+		background: $colourSeven;
+		font-family: $headingFont;
+		font-weight: 900;
+		color: #fff;
+		font-size: 1.15em;
+		outline: none;
+		@include border-radius(0px);
+
+		&:hover {
+			background: $colourOne;
+		}
+	}
+
+	textarea {
+		margin-top: 20px;
+		width: 100%;
+		padding: 10px 25px 15px 25px;
+		box-sizing: border-box;
+		border: none;
+		font-family: $mainFont;
+		resize-x: none;
+		color: $colourType;
+		font-size: 1.15em;
+		outline: none;
+		@include border-radius(0px);
+		border: 3px solid $colourBackground;
+
+		&:focus {
+			border: 3px solid $colourSeven;
+			color: $colourSeven;
+		}
+	}
+}
+
+.wpcf7-validation-errors {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-family: $headingFont !important;
+	font-weight: 900;
+	color: $colourFour;
+	font-size: 1.5em;
+}
+
+.wpcf7-not-valid-tip {
+	margin: 20px 0 0 0 !important;
+	font-family: $headingFont !important;
+	font-weight: 900;
+	color: $colourFour !important;
+}
+.wpcf7-mail-sent-ok {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-family: $headingFont !important;
+	font-weight: 900;
+	color: $colourOne;
+	font-size: 1.5em;
+}
+
+ol {
+	padding: 15px 0;
+	margin: 0;
+	list-style-type: none;
+	font-family: $mainFont;
+
+	li {
+		border-top: 1px solid $colourType;
+		padding: 15px 0;
+
+		cite, span {
+			font-size: 1.4em;
+			font-weight: 900;
+			color: $colourSeven;
+			font-style: normal;
+			font-family: $headingFont;
+			width: intrinsic;
+			padding-right: 7px;
+			float: left;
+		}
+
+		a {
+			color: $colourTypeDark;
+			text-decoration: none;
+			border-bottom: 2px solid $colourSeven;
+		}
+
+		p {
+			color: $colourTypeDark !important;
+			clear: both;
+			padding: 10px 0 0 0;
+
+		}
+
+		.commentmetadata {
+			float: right;
+			width: intrinsic;
+		}
+
+		&:last-child {
+			border-bottom: 1px solid $colourType;
+		}
+
+		ul.children {
+			padding: 20px 0;
+		}
+
+		ul li {
+			padding: 0;
+			list-style-type: none;
+		}
+	}
+
+	img {
+		display: none;
+	}
+}
+
+#respond {
+
+	h3 {
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: $colourTypeDark;
+		text-decoration: none;
+		border-bottom: 2px solid $colourSeven;
+	}
+
+	#cancel-comment-reply {
+		float: right;
+	}
+
+	form p textarea {
+		font-size: 1em !important;
+		padding: 10px 15px !important;
+	}
+}
+

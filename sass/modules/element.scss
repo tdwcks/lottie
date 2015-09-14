@@ -1,0 +1,116 @@
+// ==========================================================================
+//
+// Element
+//
+//
+
+.element-featured-box {
+	width: 100%;
+	padding: 0;
+	height: 400px;
+	overflow: hidden;
+	padding: 30px;
+	box-sizing: border-box;
+	background: $colourSeven;
+	margin-bottom: $grid-spacing;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+
+	h3 {
+		color: #fff;
+		margin-top: 20px;
+	}
+
+	h2 {
+	    color: #fff;
+
+    span {
+      opacity: 0.8;
+    }
+  }
+
+  h4 {
+    padding-top: 15px;
+    color: $colourOne;
+  }
+
+  p {
+    font-size: 1.3em;
+    color: #fff;
+  }
+}
+
+.element-poster-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	height: 100%;
+	background: $colourOne;
+	width: auto;
+	cursor: pointer;
+	opacity: 0;
+
+	h2, h3, p {
+		padding: 25px 25px 0 25px;
+		color: #fff;
+	}
+
+	p {
+		font-size: 1.25em;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.element-blog-post {
+	height: auto;
+	overflow: auto;
+	cursor: pointer;
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+
+	h2, h3, p {
+		padding: 25px 25px 0px 25px;
+		color: $colourBackground;
+	}
+
+	p {
+		margin: 0;
+		padding: 10px 25px 15px 25px;
+	}
+}
+
+.element-the-content {
+	p {
+		color: darken($colourType, 20%);
+	}
+}
+
+.element-post-details {
+	p {
+		font-size: 1em;
+		color: $colourTypeDark;
+	}
+}
+
+.element-poster {
+
+	h2:first-child {
+		color: $colourSeven;
+		margin-bottom: 0px;
+	}
+
+	h2 {
+		
+		margin-bottom: 50px;
+	}
+}
+
+.element-fade {
+	opacity: 0;
+	@include animation(fadeInReg 0.5s 1.0s ease-in forwards);
+
+}

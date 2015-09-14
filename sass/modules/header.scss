@@ -1,0 +1,46 @@
+// ==========================================================================
+//
+// Header
+//
+//
+
+header {
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding: 15px 0;
+	background: $colourOne;
+
+	h2 {
+		color: #fff;
+
+		span {
+			opacity: 0.8;
+		}
+	}
+}
+
+nav ul {
+	padding: 0;
+	padding-top: 5px;
+	margin: 0;
+	float: right;
+
+	li {
+		float: left;
+		padding-right: 27px;
+		list-style-type: none;
+
+		a {
+			font-size: 1em;
+			color: #fff;
+			font-family: $mainFont;
+			letter-spacing: 1px;
+			text-decoration: none;
+		}
+
+		&:last-child {
+			padding-right: 0px;
+		}
+	}
+}
